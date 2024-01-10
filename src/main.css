@@ -11976,6 +11976,37 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.animation {
+  background-color: #222222;
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  animation: transitionIn 1.5s;
+  z-index: 0;
+  opacity: 0;
+}
+
+@keyframes transitionIn {
+  from {
+    top: 0;
+    transform: traslateY(-300px);
+    opacity: 1;
+    z-index: 1;
+  }
+  to {
+    top: 100em;
+    transform: traslateY(0);
+    opacity: 0;
+  }
+}
+@keyframes grow {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -11984,6 +12015,7 @@ textarea.form-control-lg {
 }
 
 body {
+  overflow: hidden;
   background-color: #0f0f0f;
 }
 
@@ -12040,17 +12072,16 @@ div ul li {
 }
 
 .container {
-  height: 1000px;
-  width: 100%;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
 }
 
 .ehni {
   display: flex;
   height: 400px;
   width: 100%;
-  margin-top: 100px;
   align-items: center;
-  justify-content: space-around;
 }
 
 .david {
@@ -12096,6 +12127,8 @@ div ul li {
 
 .card {
   background-color: #1f1f1f;
+  animation: grow 1.5s ease;
+  margin: 20px;
 }
 
 .btn {
@@ -12163,4 +12196,290 @@ div ul li {
 
 .tugsgul .bluu {
   color: rgb(53, 53, 206);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.abouut {
+  display: flex;
+}
+
+.zurag {
+  border-radius: 16px;
+  height: 430px;
+  width: 430px;
+  background-color: rgb(20, 20, 22);
+  margin: 200px 40px 30px 200px;
+  padding: 30px;
+}
+
+.hajuu {
+  margin: 200px 40px 30px 10px;
+}
+
+.self {
+  display: flex;
+}
+
+.self img {
+  padding: 15px;
+}
+
+.tom {
+  font-size: 72px;
+  color: white;
+}
+
+.daviidd {
+  margin: 38px 0px 0px 0px;
+  height: 300px;
+  width: 52em;
+  background-color: rgb(20, 20, 22);
+  border-radius: 16px;
+}
+
+.daviidd h1, .daviidd .h1 {
+  color: white;
+  padding: 100px 0px 0px 24px;
+  font-size: 48px;
+}
+
+.daviidd p {
+  color: rgb(215, 210, 210);
+  font-size: 18px;
+  padding: 10px 30px 25px 20px;
+}
+
+.container {
+  margin-bottom: 100px;
+}
+
+#card-2 {
+  scale: 0.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo a {
+  color: white;
+  font-size: 36px;
+  text-decoration: none;
+}
+
+div ul {
+  display: flex;
+}
+
+.center li a {
+  color: rgb(101, 101, 119);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.white {
+  color: white !important;
+}
+
+.center a:hover {
+  transition: 0.7s;
+  color: white;
+}
+
+div ul li {
+  margin: 20px;
+}
+
+.talk a {
+  color: white;
+  font-size: 22px;
+  border-radius: 12px;
+  background-color: rgb(101, 101, 119);
+  padding: 15px 35px 15px 35px;
+  text-decoration: none;
+}
+
+.talk a:hover {
+  transition: 0.5s;
+  color: rgb(101, 101, 119);
+  background-color: white;
+}
+
+.abouut {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zurag {
+  border-radius: 16px;
+  height: 430px;
+  width: 430px;
+  background-color: rgb(20, 20, 22);
+  margin: 200px 40px 30px 0px;
+  padding: 30px;
+}
+
+.hajuu {
+  margin: 200px 40px 30px 10px;
+}
+
+.self {
+  display: flex;
+}
+
+.self img {
+  padding: 15px;
+}
+
+.tom {
+  font-size: 72px;
+  color: white;
+}
+
+.daviidd {
+  margin: 38px 0px 0px 0px;
+  height: 300px;
+  width: 52em;
+  background-color: rgb(20, 20, 22);
+  border-radius: 16px;
+}
+
+.daviidd h1, .daviidd .h1 {
+  color: white;
+  padding: 100px 0px 0px 24px;
+  font-size: 48px;
+}
+
+.daviidd p {
+  color: rgb(215, 210, 210);
+  font-size: 18px;
+  padding: 10px 30px 25px 20px;
+}
+
+.footer {
+  padding: 20px;
+}
+
+.gridx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 44px;
+  color: white;
+}
+
+.suulih {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.suulih li a {
+  text-decoration: none;
+  color: rgb(143, 143, 143);
+  padding: 12px;
+}
+
+.suulih a:hover {
+  transition: 0.5s;
+  color: white;
+}
+
+.tugsgul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin: 0px 0px 40px 0px;
+}
+
+.tugsgul p {
+  padding: 10px;
+}
+
+.tugsgul .alll {
+  color: rgb(143, 143, 143);
+}
+
+.tugsgul .bluu {
+  color: rgb(53, 53, 206);
+}
+
+body {
+  background-color: black;
+}
+
+.allbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 {
+  margin-top: 24px;
+  background-color: rgb(20, 20, 22);
+  color: white;
+  padding-left: 20px;
+  border-radius: 16px;
+  width: 40em;
+}
+
+.box1 h3, .box1 .h3 {
+  margin: 20px;
+}
+
+.box2 h3, .box2 .h3 {
+  margin: 20px;
+}
+
+.box2 {
+  margin-top: 24px;
+  background-color: rgb(20, 20, 22);
+  color: white;
+  border-radius: 16px;
+  padding-left: 20px;
+  width: 38em;
+  margin: 20px 30px 0px 38px;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.date {
+  color: rgb(196, 192, 192);
+}
+
+.type {
+  color: rgb(196, 192, 192);
 }/*# sourceMappingURL=main.css.map */
